@@ -13,20 +13,39 @@
 #define WANT_ADRENO_QUIRKS 1\
 %{nil}
 %define straggler_files \
-  /acct \
-  /bugreports \
-  /bt_firmware \
-  /cache \
-  /charger \
-  /d \
-  /dsp \
-  /firmware \
-  /odm \
-  /oem \
-  /persist \
-  /product \
-  /sdcard \
-  /storage \
+/acct \
+/apex \
+/boot \
+/bt_firmware \
+/bugreports \
+/cache \
+/config \
+/d \
+/data \
+/data_mirror \
+/debug_ramdisk \
+/default.prop \
+/etc \
+/firmware \
+/img \
+/init-debug \
+/init.environ.rc \
+/init.recovery.qcom.rc \
+/lib \
+/linkerconfig \
+/metadata \
+/mnt \
+/odm \
+/oem \
+/postinstall \
+/product \
+/sbin \
+/sdcard \
+/storage \
+/system \
+/system_ext \
+/usr \
+/vendor \
 %{nil}
 
 %include rpm/dhd/droid-hal-device.inc
