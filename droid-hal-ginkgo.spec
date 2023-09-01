@@ -8,6 +8,26 @@
 %define device_pretty REDMI NOTE 8
 
 %define installable_zip 1
+%define droid_target_aarch64 1
+%define android_config \
+#define WANT_ADRENO_QUIRKS 1\
+%{nil}
+%define straggler_files \
+  /acct \
+  /bugreports \
+  /bt_firmware \
+  /cache \
+  /charger \
+  /d \
+  /dsp \
+  /firmware \
+  /odm \
+  /oem \
+  /persist \
+  /product \
+  /sdcard \
+  /storage \
+%{nil}
 
 %include rpm/dhd/droid-hal-device.inc
 
