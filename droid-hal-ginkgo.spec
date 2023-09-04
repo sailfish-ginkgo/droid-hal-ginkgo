@@ -15,37 +15,18 @@
 %define straggler_files \
 /acct \
 /apex \
-/boot \
 /bt_firmware \
 /bugreports \
 /cache \
 /config \
 /d \
-/data \
-/data_mirror \
-/debug_ramdisk \
-/default.prop \
-/etc \
 /firmware \
-/img \
-/init-debug \
-/init.environ.rc \
-/init.recovery.qcom.rc \
-/lib \
-/linkerconfig \
-/metadata \
-/mnt \
 /odm \
 /oem \
-/postinstall \
 /product \
-/sbin \
 /sdcard \
 /storage \
-/system \
 /system_ext \
-/usr \
-/vendor \
 %{nil}
 
 %include rpm/dhd/droid-hal-device.inc
@@ -53,4 +34,3 @@
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
 # sign, otherwise they will remain defined! E.g.:
 #define some_macro "I'll not be defined because I don't have % in front"
-
